@@ -1,4 +1,6 @@
+
 /*
+ORIGINAL VERSION INFO
 Theme Name: GovPress
 Theme URI: http://govpress.co/
 Author: GovFresh
@@ -10,10 +12,8 @@ License URI: license.txt
 Text Domain: govpress
 Domain Path: /languages/
 Tags: responsive-layout, two-columns, custom-header, custom-menu, featured-image-header, full-width-template, translation-ready
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
 GovPress is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 */
 /* =Global Variables
@@ -492,7 +492,7 @@ a:hover {
 .content-area {
   float: left;
   margin: 0 -25% 0 0;
-  width: 100%;
+  width: 90%;
 }
 
 .col-width {
@@ -514,7 +514,7 @@ a:hover {
 #secondary {
   float: right;
   overflow: hidden;
-  width: 25%;
+  width: 35%;
 }
 
 .site-footer {
