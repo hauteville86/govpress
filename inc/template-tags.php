@@ -93,7 +93,7 @@ function govpress_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="posted-on">Posted on %1$s</span><span class="byline"> by %2$s</span>', 'govpress' ),
+	printf( __( '<span class="posted-on">Opublikowane %1$s</span><span class="byline"> przez %2$s</span>', 'govpress' ),
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			$time_string
