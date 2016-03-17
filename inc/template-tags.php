@@ -103,6 +103,10 @@ function govpress_posted_on() {
 			esc_html( get_the_author() )
 		)
 	);
+	
+	echo '<p>';
+  	comments_popup_link( 'Zacznij dyskusję', '1 komentarz', '% komentarzy', 'comments-link', 'Komentarze są wyłączone dla tego artykułu');
+  	echo '</p>';
 }
 endif;
 
