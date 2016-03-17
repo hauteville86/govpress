@@ -105,7 +105,8 @@ function govpress_posted_on() {
 	);
 	
 	echo '<p>';
-  	comments_popup_link( 'Zacznij dyskusję', '1 komentarz', '% komentarzy', 'comments-link', 'Komentarze są wyłączone dla tego artykułu');
+  	comments_popup_link( '0 komentarzy - rozpocznij dyskusję!', '1 komentarz', '% komentarzy', 'comments-link', 
+  	'Komentarze są wyłączone dla tego artykułu');
   	echo '</p>';
 }
 endif;
