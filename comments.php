@@ -68,6 +68,20 @@ if ( post_password_required() ) {
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'govpress' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php 
+		if(is_user_logged_in())
+	    {
+	       comment_form();  
+	    }
+	    else
+	    {
+	        $comment_args = array(
+	            'comment_notes_before' => 'Twój adres email nie zostanie opublikowany. Pola, których wypełnienie jest wymagane, są oznaczone symbolem * <br><br> <b>Teraz masz możliwość komentowania za pomocą swojego profilu na Facebooku.</b>
+	            <a href="http://woofla.pl/wp-login.php?loginFacebook=1&amp;redirect=' . get_permalink($post->ID) . '" rel="nofollow"><div class="new-fb-btn new-fb-1 new-fb-default-anim"><div class="new-fb-1-1"><div class="new-fb-1-1-1">ZALOGUJ SIĘ</div></div></div></a>'
+	        );
+	        comment_form($comment_args);
+	        
+	    }
+	?>
 
 </div><!-- #comments -->
